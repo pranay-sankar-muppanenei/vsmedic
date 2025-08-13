@@ -198,7 +198,7 @@ const AppointmentForm = () => {
       {/* Right - Image */}
       <div className="flex-1">
         <img
-          src="https://images.pexels.com/photos/7088528/pexels-photo-7088528.jpeg"
+          src="/app.jpg"
           alt="Doctor on Phone"
           className="w-full h-full object-cover"
         />

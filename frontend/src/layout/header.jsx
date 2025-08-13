@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FiPhoneCall } from "react-icons/fi";
 
 const Header = () => {
-  const [showServicesDropdown, setShowServicesDropdown] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(null); // null | "services" | "pages"
 
   const navLinks = [
     { name: "HOME", path: "/" },
@@ -11,9 +11,19 @@ const Header = () => {
     {
       name: "SERVICES",
       path: "/services",
-      dropdown: [{ name: "Services", path: "/services" },{ name: "Service Detail", path: "/service-detail" }],
+      dropdown: [
+        { name: "Services", path: "/services" },
+        { name: "Service Detail", path: "/service-detail" },
+      ],
     },
-    { name: "PAGES", path: "/pages" },
+    {
+      name: "PAGES",
+      path: "/pages",
+      dropdown: [
+        { name: "Doctors", path: "/doctors" },
+        { name: "Page 2", path: "/pages/page2" },
+      ],
+    },
     { name: "CONTACT", path: "/contact" },
   ];
 
@@ -32,8 +42,8 @@ const Header = () => {
               <div
                 key={link.path}
                 className="relative"
-                onMouseEnter={() => setShowServicesDropdown(true)}
-                onMouseLeave={() => setShowServicesDropdown(false)}
+                onMouseEnter={() => setShowDropdown(link.name)}
+                onMouseLeave={() => setShowDropdown(null)}
               >
                 <NavLink
                   to={link.path}
@@ -47,9 +57,8 @@ const Header = () => {
                 </NavLink>
 
                 {/* Dropdown */}
-                {showServicesDropdown && (
+                {showDropdown === link.name && (
                   <div className="absolute top-2 left-0 mt-2 w-48 bg-white shadow-lg rounded-md border border-gray-200 z-50 p-4">
-                    
                     {link.dropdown.map((item) => (
                       <NavLink
                         key={item.path}

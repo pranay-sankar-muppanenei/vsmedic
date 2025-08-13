@@ -6,6 +6,8 @@ import Contact from "./components/Contact";
 import About from "./components/about";
 import Service from "./components/Service";
 import ServiceDetail from "./components/serviceDetail";
+import Doctors from "./components/Doctors"
+import ServiceDetail2 from "./components/serviceDetail2";
 import NotFound from "./components/NotFound"; // import the 404 page
 
 import "./App.css";
@@ -21,7 +23,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Service />} />
-          <Route path="/service-detail" element={<ServiceDetail />} />
+     <Route path="/services/:id" element={<ServiceDetail />} />
+     <Route path="/service-detail" element={<ServiceDetail2 />} />
+          <Route path='/doctors' element={<Doctors/>}/>
           
           {/* This must be last */}
           <Route path="*" element={<NotFound />} />
