@@ -1,23 +1,22 @@
-import { FiArrowRight } from "react-icons/fi";
-import { FaPills, FaUserMd, FaSearch } from "react-icons/fa";
+import { FiArrowRight, FiActivity, FiUser, FiSearch } from "react-icons/fi";
 
 const services = [
   {
-    icon: <FaPills className="text-indigo-600 text-4xl" />,
+    icon: <FiActivity className="text-indigo-600 text-4xl" />,
     title: "Multispeciality OPDs",
     description:
       "Jaipur’s leading specialists in Cardiology, Orthopaedics, Neurology, Gynaecology, and more — all under one roof, with minimal waiting.",
     cta: "Book an OPD Slot",
   },
   {
-    icon: <FaUserMd className="text-indigo-600 text-4xl" />,
+    icon: <FiUser className="text-indigo-600 text-4xl" />,
     title: "SRAJAN Women Wellness",
     description:
       "Garbh Sanskar, prenatal yoga, postnatal recovery, lactation planning, and authentic Ayurveda therapies — guided personally by Dr Anuradha Saraswat.",
     cta: "View Motherhood Programs",
   },
   {
-    icon: <FaSearch className="text-indigo-600 text-4xl" />,
+    icon: <FiSearch className="text-indigo-600 text-4xl" />,
     title: "Singla Slimming Centre",
     description:
       "Doctor-led slimming & body transformation programs that deliver visible, safe, and lasting results — without crash diets or unsafe gimmicks.",
@@ -27,7 +26,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="bg-[#f9f9ff] py-16">
+    <section className="bg-[#f9f9ff] py-16 h-screen">
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Heading */}
         <p className="text-md font-semibold text-indigo-600 tracking-widest uppercase">
