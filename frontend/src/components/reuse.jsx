@@ -6,7 +6,7 @@ const Reuse = () => {
     <div className="bg-[#f8f8ff]">
       <div className="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center">
         {/* Left Content */}
-        <div className="flex-1 text-left">
+        <div className="flex-1 text-left order-2 md:order-1">
           <p className="text-[#4B771E] font-semibold uppercase tracking-widest mb-2">
             Get Started
           </p>
@@ -28,7 +28,7 @@ const Reuse = () => {
         </div>
 
         {/* Right Image */}
-        <div className="flex-1 mt-8 md:mt-0 flex justify-center">
+        <div className="order-1 md:order-2 flex-1 mt-8 md:mt-0 flex justify-center">
           <img
             src="/doc4.png"
             alt="Doctor"

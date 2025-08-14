@@ -57,7 +57,7 @@ const AppointmentForm = () => {
   return (
     <section className="bg-[#f9faff] min-h-screen flex flex-col md:flex-row">
       {/* Left - Form */}
-      <div className="flex-1 p-8 md:p-16 flex flex-col justify-center">
+      <div className="order-2 md:order-1 flex-1 p-8 md:p-16 flex flex-col justify-center">
         <h5 className="text-[#4B771E] tracking-widest font-semibold text-sm mb-2">
           APPOINTMENT
         </h5>
@@ -196,7 +196,7 @@ const AppointmentForm = () => {
       </div>
 
       {/* Right - Image */}
-      <div className="flex-1">
+      <div className="flex-1 order-1 md:order-2">
         <img
           src="/app.jpg"
           alt="Doctor on Phone"
