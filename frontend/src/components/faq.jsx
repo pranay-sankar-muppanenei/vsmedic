@@ -46,10 +46,10 @@ const FAQSection = () => {
 
         {/* Right FAQ */}
         <div className="flex-1">
-          <p className="text-indigo-600 font-semibold uppercase tracking-wide">
+          <p className="text-[#4B771E] text-md font-semibold uppercase tracking-wide">
             FAQs
           </p>
-          <h2 className="text-3xl font-bold mt-2 mb-4">
+          <h2 className="text-3xl  mt-2 mb-4">
             Frequently Asked Questions
           </h2>
           <p className="text-gray-600 mb-6">
@@ -68,7 +68,7 @@ const FAQSection = () => {
                   className="w-full flex justify-between items-center px-4 py-3 text-left"
                 >
                   <span className="font-medium">{faq.question}</span>
-                  <span className="bg-indigo-600 text-white w-8 h-8 flex items-center justify-center rounded-full transition-colors duration-300">
+                  <span className="bg-[#4B771E] text-white w-8 h-8 flex items-center justify-center rounded-full transition-colors duration-300">
                     {openIndex === index ? <FaMinus /> : <FaPlus />}
                   </span>
                 </button>

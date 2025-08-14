@@ -7,10 +7,10 @@ const Reuse = () => {
       <div className="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center">
         {/* Left Content */}
         <div className="flex-1 text-left">
-          <p className="text-indigo-600 font-semibold uppercase tracking-widest mb-2">
+          <p className="text-[#4B771E] font-semibold uppercase tracking-widest mb-2">
             Get Started
           </p>
-          <h1 className="text-4xl md:text-5xl  leading-tight mb-4 text-gray-900">
+          <h1 className="text-4xl md:text-5xl leading-tight mb-4 text-gray-900">
             The Most Interesting Hospital in the World
           </h1>
           <p className="text-gray-600 mb-8 max-w-lg">
@@ -18,10 +18,10 @@ const Reuse = () => {
             tellus, luctus nec ullamcorper mattis.
           </p>
           <div className="flex items-center gap-4">
-            <button className="bg-indigo-600 text-white px-6 py-3 rounded-full font-medium shadow-md hover:bg-indigo-700 transition">
+            <button className="bg-[#4B771E] hover:scale-102 text-white px-6 py-3 rounded-full font-medium shadow-md hover:bg-[#3e6519] transition">
               Get Started
             </button>
-            <button className="border border-indigo-200 px-6 py-3 rounded-full font-medium text-gray-800 hover:bg-indigo-50 transition">
+            <button className="border border-[#cfe3c4] hover:scale-102 px-6 py-3 rounded-full font-medium text-gray-800 hover:bg-[#f2f8f0] transition">
               Contact Us
             </button>
           </div>
