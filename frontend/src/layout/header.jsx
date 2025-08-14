@@ -32,7 +32,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-4 border-r border-gray-300 pr-6">
-          <img src="/meddic.png" alt="Meddic Logo" className="h-12" />
+          <img src="/logo.png" alt="Meddic Logo" className="h-[50px] w-[200px]" />
         </div>
 
         {/* Navigation */}
