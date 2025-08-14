@@ -29,12 +29,12 @@ export default function WhyChooseVsMediHub() {
     <section className="bg-[#f7f8ff] py-16">
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Small section title */}
-        <p className="text-sm font-semibold text-indigo-600 tracking-widest uppercase">
+        <p className="text-md font-semibold text-[#4B771E] tracking-widest uppercase">
           Why Choose Us?
         </p>
 
         {/* Main headline */}
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2 leading-snug">
+        <h2 className="text-2xl md:text-3xl  text-gray-900 mt-2 leading-snug">
           Because You Deserve Healthcare That Feels Personal
         </h2>
 
@@ -46,16 +46,16 @@ export default function WhyChooseVsMediHub() {
               className="
                 group rounded-2xl bg-white p-6 shadow-sm border border-gray-100
                 transition-transform duration-300 ease-out
-                hover:scale-[1.05] hover:shadow-[0_0_35px_rgba(59,130,246,0.45)]
-                hover:border-blue-300 flex flex-col items-center text-center
+                hover:scale-[1.05] hover:shadow-[0_0_35px_rgba(75,119,30,0.45)]
+                hover:border-[#4B771E] flex flex-col items-center text-center
               "
             >
               {/* Icon */}
               <div
                 className="
                   w-14 h-14 rounded-xl flex items-center justify-center
-                  bg-blue-50 text-blue-600 mb-4
-                  group-hover:bg-blue-600 group-hover:text-white transition-colors
+                  bg-green-50 text-[#4B771E] mb-4
+                  group-hover:bg-[#4B771E] group-hover:text-white transition-colors
                 "
               >
                 {item.icon}

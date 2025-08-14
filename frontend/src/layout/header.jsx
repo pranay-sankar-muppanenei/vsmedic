@@ -49,8 +49,8 @@ const Header = () => {
                   to={link.path}
                   className={({ isActive }) =>
                     isActive
-                      ? "text-[#4d4dff] font-bold"
-                      : "text-gray-500 hover:text-[#4d4dff] transition"
+                      ? "text-[#4B771E] font-bold"
+                      : "text-gray-500 hover:text-[#4B771E] transition"
                   }
                 >
                   {link.name}
@@ -65,8 +65,8 @@ const Header = () => {
                         to={item.path}
                         className={({ isActive }) =>
                           isActive
-                            ? "block text-[#4d4dff] font-medium text-sm py-1"
-                            : "block text-gray-600 hover:text-[#4d4dff] text-sm py-1 transition"
+                            ? "block text-[#4B771E] font-medium text-sm py-1"
+                            : "block text-gray-600 hover:text-[#4B771E] text-sm py-1 transition"
                         }
                       >
                         {item.name}
@@ -81,8 +81,8 @@ const Header = () => {
                 to={link.path}
                 className={({ isActive }) =>
                   isActive
-                    ? "text-[#4d4dff] font-bold"
-                    : "text-gray-500 hover:text-[#4d4dff] transition"
+                    ? "text-[#4B771E] font-bold"
+                    : "text-gray-500 hover:text-[#4B771E] transition"
                 }
               >
                 {link.name}
@@ -94,14 +94,14 @@ const Header = () => {
         {/* Right Actions */}
         <div className="flex items-center space-x-6">
           <div className="flex items-center space-x-2">
-            <FiPhoneCall className="text-[#4d4dff] text-lg" />
+            <FiPhoneCall className="text-[#4B771E] text-lg" />
             <span className="text-sm font-semibold text-black">
               Emergency Call
             </span>
           </div>
           <NavLink
             to="/appointment"
-            className="bg-[#4d4dff] hover:bg-[#3a3add] text-white font-semibold text-sm px-6 py-2 rounded-full shadow-lg shadow-[0_0_20px_rgba(34,197,94,0.4)] transform hover:scale-105 transition-all duration-200"
+            className="bg-[#4B771E] hover:bg-[#3a5f17] text-white font-semibold text-sm px-6 py-2 rounded-full shadow-lg shadow-[0_0_20px_rgba(75,119,30,0.4)] transform hover:scale-105 transition-all duration-200"
           >
             Appointment
           </NavLink>

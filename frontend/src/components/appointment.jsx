@@ -58,10 +58,10 @@ const AppointmentForm = () => {
     <section className="bg-[#f9faff] min-h-screen flex flex-col md:flex-row">
       {/* Left - Form */}
       <div className="flex-1 p-8 md:p-16 flex flex-col justify-center">
-        <h5 className="text-blue-800 tracking-widest font-semibold text-sm mb-2">
+        <h5 className="text-[#4B771E] tracking-widest font-semibold text-sm mb-2">
           APPOINTMENT
         </h5>
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">
+        <h1 className="text-3xl md:text-4xl  mb-4">
           Book Your Appointment
         </h1>
         <p className="text-gray-600 mb-8 leading-relaxed max-w-lg">
@@ -73,7 +73,7 @@ const AppointmentForm = () => {
           {/* Name */}
           <div>
             <label className="block font-semibold text-sm mb-1">
-              Your Name <span className="text-blue-600">*</span>
+              Your Name <span className="text-[#4B771E]">*</span>
             </label>
             <input
               type="text"
@@ -83,7 +83,7 @@ const AppointmentForm = () => {
               placeholder="John Doe"
               className={`w-full border ${
                 errors.name ? "border-red-500" : "border-gray-300"
-              } rounded-lg p-3 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 outline-none`}
+              } rounded-lg p-3 focus:border-[#4B771E] focus:ring-2 focus:ring-[#4B771E]/50 outline-none`}
             />
             {errors.name && (
               <p className="text-red-500 text-sm mt-1">{errors.name}</p>
@@ -94,7 +94,7 @@ const AppointmentForm = () => {
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-1">
               <label className="block font-semibold text-sm mb-1">
-                Phone <span className="text-blue-600">*</span>
+                Phone <span className="text-[#4B771E]">*</span>
               </label>
               <input
                 type="tel"
@@ -104,7 +104,7 @@ const AppointmentForm = () => {
                 placeholder="+1 (234) 567 890"
                 className={`w-full border ${
                   errors.phone ? "border-red-500" : "border-gray-300"
-                } rounded-lg p-3 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 outline-none`}
+                } rounded-lg p-3 focus:border-[#4B771E] focus:ring-2 focus:ring-[#4B771E]/50 outline-none`}
               />
               {errors.phone && (
                 <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
@@ -112,7 +112,7 @@ const AppointmentForm = () => {
             </div>
             <div className="flex-1">
               <label className="block font-semibold text-sm mb-1">
-                Email <span className="text-blue-600">*</span>
+                Email <span className="text-[#4B771E]">*</span>
               </label>
               <input
                 type="email"
@@ -122,7 +122,7 @@ const AppointmentForm = () => {
                 placeholder="example@mail.com"
                 className={`w-full border ${
                   errors.email ? "border-red-500" : "border-gray-300"
-                } rounded-lg p-3 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 outline-none`}
+                } rounded-lg p-3 focus:border-[#4B771E] focus:ring-2 focus:ring-[#4B771E]/50 outline-none`}
               />
               {errors.email && (
                 <p className="text-red-500 text-sm mt-1">{errors.email}</p>
@@ -134,7 +134,7 @@ const AppointmentForm = () => {
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-1">
               <label className="block font-semibold text-sm mb-1">
-                Date <span className="text-blue-600">*</span>
+                Date <span className="text-[#4B771E]">*</span>
               </label>
               <DatePicker
                 selected={formData.date}
@@ -143,7 +143,7 @@ const AppointmentForm = () => {
                 placeholderText="Select date"
                 className={`w-full border ${
                   errors.date ? "border-red-500" : "border-gray-300"
-                } rounded-lg p-3 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 outline-none`}
+                } rounded-lg p-3 focus:border-[#4B771E] focus:ring-2 focus:ring-[#4B771E]/50 outline-none`}
               />
               {errors.date && (
                 <p className="text-red-500 text-sm mt-1">{errors.date}</p>
@@ -151,7 +151,7 @@ const AppointmentForm = () => {
             </div>
             <div className="flex-1">
               <label className="block font-semibold text-sm mb-1">
-                Time <span className="text-blue-600">*</span>
+                Time <span className="text-[#4B771E]">*</span>
               </label>
               <DatePicker
                 selected={formData.time}
@@ -164,7 +164,7 @@ const AppointmentForm = () => {
                 placeholderText="Select time"
                 className={`w-full border ${
                   errors.time ? "border-red-500" : "border-gray-300"
-                } rounded-lg p-3 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 outline-none`}
+                } rounded-lg p-3 focus:border-[#4B771E] focus:ring-2 focus:ring-[#4B771E]/50 outline-none`}
               />
               {errors.time && (
                 <p className="text-red-500 text-sm mt-1">{errors.time}</p>
@@ -181,14 +181,14 @@ const AppointmentForm = () => {
               value={formData.message}
               onChange={handleChange}
               placeholder="Hello there!"
-              className="w-full border border-gray-300 rounded-lg p-3 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 outline-none"
+              className="w-full border border-gray-300 rounded-lg p-3 focus:border-[#4B771E] focus:ring-2 focus:ring-[#4B771E]/50 outline-none"
             ></textarea>
           </div>
 
           {/* Button */}
           <button
             type="submit"
-            className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold shadow-md transition duration-300"
+            className="bg-[#4B771E] hover:bg-[#3a5f17] text-white px-6 py-3 rounded-full font-semibold shadow-md transition duration-300"
           >
             Make Appointment
           </button>

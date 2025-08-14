@@ -5,7 +5,7 @@ import { FaPlay } from "react-icons/fa";
 
 const ServiceDetail2 = () => {
   return (
-    <> <h1 className="text-center text-3xl font-bold mt-6 mb-6">Service Detail</h1>
+    <> <h1 className="text-center text-[#4B771E] text-3xl font-bold mt-6 mb-6">Service Detail</h1>
 
       {/* Image */}
       <div className="w-full flex justify-center mb-10">

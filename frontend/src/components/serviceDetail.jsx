@@ -16,7 +16,9 @@ const ServiceDetail = () => {
 
   return (
     <>
-      <h1 className="text-center text-3xl font-bold mt-6 mb-6">{service.title}</h1>
+      <h1 className="text-center text-[#4B771E]  text-3xl font-bold mt-6 mb-6">
+        {service.title}
+      </h1>
 
       {/* Main Image */}
       <div className="w-full flex justify-center mb-10">
@@ -31,7 +33,9 @@ const ServiceDetail = () => {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           {/* Text */}
           <div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-4">{service.title}</h1>
+            <h1 className="text-3xl font-bold text-gray-900 mb-4">
+              {service.title}
+            </h1>
             <p className="text-gray-600 mb-4">{service.description}</p>
             <p className="text-gray-600">{service.overview}</p>
           </div>
@@ -44,7 +48,8 @@ const ServiceDetail = () => {
               className="rounded-lg shadow-md w-full h-auto object-cover"
             />
             <button className="absolute inset-0 flex items-center justify-center">
-              <div className="bg-white text-blue-600 p-4 rounded-full shadow-lg hover:scale-110 transition-transform">
+              {/* Green tint applied instead of blue */}
+              <div className="bg-white text-[#4B771E] p-4 rounded-full shadow-lg hover:scale-110 transition-transform">
                 <FaPlay size={20} />
               </div>
             </button>

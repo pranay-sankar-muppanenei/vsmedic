@@ -2,13 +2,13 @@ import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn, FaInstagram } from "re
 
 export default function Footer() {
   return (
-    <footer className="bg-[#4851d5] text-white">
+    <footer className="bg-[#4B771E] text-white">
       <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
 
         {/* Logo & About */}
         <div>
           <h2 className="text-2xl font-bold">VS MediHUB</h2>
-          <p className="mt-4 text-sm text-indigo-200">
+          <p className="mt-4 text-sm text-green-100">
             Providing trusted medical care with certified professionals and modern facilities.
           </p>
           {/* Social Icons */}
@@ -28,18 +28,18 @@ export default function Footer() {
         {/* Address & Contact */}
         <div>
           <h3 className="font-semibold text-lg">Address</h3>
-          <p className="text-indigo-200 text-sm mt-2">
+          <p className="text-green-100 text-sm mt-2">
             Nirman Nagar, Jaipur – Centrally located, private parking available.
           </p>
           <h3 className="font-semibold text-lg mt-4">Contact</h3>
-          <p className="text-indigo-200 text-sm mt-2">+91 98765 43210</p>
-          <p className="text-indigo-200 text-sm">contact@vsmedihub.com</p>
+          <p className="text-green-100 text-sm mt-2">+91 98765 43210</p>
+          <p className="text-green-100 text-sm">contact@vsmedihub.com</p>
         </div>
 
         {/* Explore */}
         <div>
           <h3 className="font-semibold text-lg">Explore</h3>
-          <ul className="mt-2 space-y-2 text-sm text-indigo-200">
+          <ul className="mt-2 space-y-2 text-sm text-green-100">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
@@ -51,7 +51,7 @@ export default function Footer() {
         {/* Resources */}
         <div>
           <h3 className="font-semibold text-lg">Resources</h3>
-          <ul className="mt-2 space-y-2 text-sm text-indigo-200">
+          <ul className="mt-2 space-y-2 text-sm text-green-100">
             <li><a href="#">Documentation</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Press Files</a></li>
@@ -68,7 +68,7 @@ export default function Footer() {
           <input
             type="email"
             placeholder="Your email"
-            className="px-4 bg-white  py-2 rounded-full  md:w-[300px]  text-gray-800 focus:outline-none"
+            className="px-4 bg-white py-2 rounded-full md:w-[300px] text-gray-800 focus:outline-none"
           />
           <button
             type="submit"
@@ -80,7 +80,7 @@ export default function Footer() {
       </div>
 
       {/* Footer Bottom */}
-      <div className="border-t flex justify-between p-1 border-indigo-500 mt-8 py-4 text-center text-sm text-indigo-200">
+      <div className="border-t flex justify-between p-1 border-green-300 mt-8 py-4 text-center text-sm text-green-100">
         <p>© 2025 VS MediHUB – All rights reserved.</p>
         <p>Medical license & certifications displayed.</p>
         <p className="mt-1">

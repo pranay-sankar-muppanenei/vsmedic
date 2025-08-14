@@ -8,32 +8,32 @@ export default function ProblemSolution() {
         {/* Left Side - Problems & Solution */}
         <div>
           {/* Headline */}
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-snug mb-6">
+          <h2 className="text-3xl lg:text-4xl  text-gray-900 leading-snug mb-6">
             Tired of juggling multiple clinics, long waits, and disconnected care?
           </h2>
 
           {/* Problems List */}
           <div className="space-y-6 mb-8">
             <div className="flex items-start gap-4">
-              <FaClinicMedical className="text-blue-600 text-3xl flex-shrink-0" />
+              <FaClinicMedical className="text-[#4B771E] text-3xl flex-shrink-0" />
               <p className="text-lg text-gray-700 font-medium">Fragmented healthcare experience ?</p>
             </div>
             <div className="flex items-start gap-4">
-              <FaUserCheck className="text-blue-600 text-3xl flex-shrink-0" />
+              <FaUserCheck className="text-[#4B771E] text-3xl flex-shrink-0" />
               <p className="text-lg text-gray-700 font-medium">Lack of personalised attention ?</p>
             </div>
             <div className="flex items-start gap-4">
-              <FaHospitalUser className="text-blue-600 text-3xl flex-shrink-0" />
+              <FaHospitalUser className="text-[#4B771E] text-3xl flex-shrink-0" />
               <p className="text-lg text-gray-700 font-medium">Stressful hospital visits ?</p>
             </div>
           </div>
 
           {/* Solution */}
-          <div className="bg-blue-50 p-6 rounded-2xl shadow-md">
+          <div className="bg-green-50 p-6 rounded-2xl shadow-md">
             <p className="text-lg text-gray-800 font-semibold mb-4">
-              At <span className="text-blue-600 font-bold">VS MediHUB</span>, we’ve integrated Jaipur’s top doctors, premium OPD, and holistic wellness care — all in one serene space.
+              At <span className="text-[#4B771E] font-bold">VS MediHUB</span>, we’ve integrated Jaipur’s top doctors, premium OPD, and holistic wellness care — all in one serene space.
             </p>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold shadow-md transition-all">
+            <button className="bg-[#4B771E] hover:bg-[#3b5f18] text-white px-6 py-3 rounded-lg font-semibold shadow-md transition-all">
               Discover How We Care →
             </button>
           </div>

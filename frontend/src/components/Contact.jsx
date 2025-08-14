@@ -15,7 +15,7 @@ const Contact = () => {
   return (
     <div className="bg-white py-10">
       {/* Heading */}
-      <h1 className="text-center text-3xl font-bold text-[#4B771E] mb-6">
+      <h1 className="text-center text-3xl font-bold text-[#4B771E] mb-6 tracking-wide">
         Our Contact
       </h1>
 
@@ -64,7 +64,7 @@ const Contact = () => {
               </span>
               <div>
                 <h4 className="font-semibold">Our Number</h4>
-                <p>+1 (234) 567 890 00</p>
+                <p>+91 98765 43210</p>
             
               </div>
             </div>
@@ -76,7 +76,7 @@ const Contact = () => {
               </span>
               <div>
                 <h4 className="font-semibold">Address</h4>
-                <p>034 Erling Knolls, Kenny, Dakota 8902</p>
+                <p> Nirman Nagar, Jaipur – Centrally located</p>
               </div>
             </div>
           </div>
