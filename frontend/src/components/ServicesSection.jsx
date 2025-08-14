@@ -32,7 +32,7 @@ export default function ServicesSection() {
   const navigate = useNavigate();
 
   return (
-    <section className="bg-[#f9f9ff] py-16 h-screen mb-2">
+    <section className="bg-[#f9f9ff] py-16 mb-2">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <p className="text-md font-semibold text-[#4B771E] tracking-widest uppercase">
           Our Services

@@ -5,7 +5,7 @@ const AboutSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className="bg-[#f9f9ff] py-16">
+    <section className="bg-[#f9f9ff] py-16 px-2">
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-8">
         {/* Left Images */}
         <div className="flex gap-4 flex-1">

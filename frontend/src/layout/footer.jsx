@@ -3,7 +3,8 @@ import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn, FaInstagram } from "re
 export default function Footer() {
   return (
     <footer className="bg-[#4B771E] text-white">
-      <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
+      {/* Main Grid */}
+      <div className="max-w-7xl mx-auto px-6 py-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
 
         {/* Logo & About */}
         <div>
@@ -12,7 +13,7 @@ export default function Footer() {
             Providing trusted medical care with certified professionals and modern facilities.
           </p>
           {/* Social Icons */}
-          <div className="flex gap-3 mt-4">
+          <div className="flex gap-3 mt-4 flex-wrap">
             <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition">
               <FaFacebookF />
             </a>
@@ -62,13 +63,13 @@ export default function Footer() {
       </div>
 
       {/* Newsletter */}
-      <div className="max-w-7xl mx-auto px-6 mt-6">
-        <h3 className="text-lg font-medium text-center">Subscribe to Our Newsletter</h3>
-        <form className="mt-4 flex justify-center gap-3">
+      <div className="max-w-7xl mx-auto px-6 mt-6 text-center">
+        <h3 className="text-lg font-medium">Subscribe to Our Newsletter</h3>
+        <form className="mt-4 flex flex-col sm:flex-row justify-center gap-3">
           <input
             type="email"
             placeholder="Your email"
-            className="px-4 bg-white py-2 rounded-full md:w-[300px] text-gray-800 focus:outline-none"
+            className="px-4 bg-white py-2 rounded-full w-full sm:w-[300px] text-gray-800 focus:outline-none"
           />
           <button
             type="submit"
@@ -80,11 +81,12 @@ export default function Footer() {
       </div>
 
       {/* Footer Bottom */}
-      <div className="border-t flex justify-between p-1 border-green-300 mt-8 py-4 text-center text-sm text-green-100">
+      <div className="border-t border-green-300 mt-8 py-4 text-center text-sm text-green-100 space-y-2 px-4">
         <p>© 2025 VS MediHUB – All rights reserved.</p>
         <p>Medical license & certifications displayed.</p>
-        <p className="mt-1">
-          Follow us on <a href="#" className="underline">Instagram</a> |{" "}
+        <p>
+          Follow us on{" "}
+          <a href="#" className="underline">Instagram</a> |{" "}
           <a href="#" className="underline">YouTube</a> |{" "}
           <a href="#" className="underline">Facebook</a>
         </p>

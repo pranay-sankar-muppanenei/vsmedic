@@ -47,7 +47,7 @@ export default function Service() {
       <h1 className="text-center text-3xl text-[#4B771E] tracking-wide font-bold mb-6">Our Services</h1>
 
       {/* Image */}
-      <div className="w-full flex justify-center mb-10">
+      <div className="w-full p-1 flex justify-center mb-10">
         <img
           src="/a.jpg"
           alt="Contact"
