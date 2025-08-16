@@ -16,6 +16,7 @@ const Header = () => {
       path: "/services",
       dropdown: [
         { name: "Services", path: "/services" },
+        { name: "SrajanWomenWellness", path: "/srajan" },
         { name: "Service Detail", path: "/service-detail" },
       ],
     },
