@@ -198,6 +198,47 @@ const SrajanWomenWellness = () => {
     </p>
   </div>
 </section>
+{/* Testimonials Section */}
+<section className="bg-[#f9f9ff] py-16">
+  <div className="max-w-6xl mx-auto px-6 text-center">
+    <p className="text-md font-semibold text-[#4B771E] tracking-widest uppercase">
+      Happy Mothers
+    </p>
+    <h2 className="text-4xl text-gray-900 mt-2 mb-8">
+      Real Experiences, Real Smiles
+    </h2>
+
+    {/* Grid of testimonials */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      {[
+        { image: "/mom1.jpg", text: "The yoga sessions made my pregnancy journey smooth & peaceful." },
+        { image: "/mom2.jpg", text: "Garbh Sanskar classes brought positivity & confidence." },
+        { image: "/mom3.jpg", text: "Personal counselling really helped me recover post-delivery." },
+      ].map((testimonial, idx) => (
+        <div
+          key={idx}
+          className="group relative bg-white rounded-xl shadow-sm p-4 overflow-hidden
+                     transition duration-500 hover:shadow-xl hover:-translate-y-2"
+        >
+          {/* Image */}
+          <div className="relative">
+            <img
+              src={testimonial.image}
+              alt="Mother experience"
+              className="rounded-lg w-full h-[280px] object-cover group-hover:scale-105 transition duration-500"
+            />
+
+            {/* Aura overlay */}
+            <div className="absolute inset-0 bg-[#4B771E]/20 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+          </div>
+
+          {/* Text */}
+          <p className="mt-4 text-gray-700 italic text-sm">“{testimonial.text}”</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
 
       {/* Video */}
