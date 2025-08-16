@@ -65,23 +65,35 @@ const Header = () => {
                 </NavLink>
 
                 {/* Desktop Dropdown */}
-                {showDropdown === link.name && (
-                  <div className="absolute left-0 top-3 mt-2 w-48 bg-white shadow-lg rounded-md border border-gray-200 z-50 p-4">
-                    {link.dropdown.map((item) => (
-                      <NavLink
-                        key={item.path}
-                        to={item.path}
-                        className={({ isActive }) =>
-                          isActive
-                            ? "block text-[#4B771E] font-medium text-sm py-1"
-                            : "block text-gray-600 hover:text-[#4B771E] text-sm py-1 transition"
-                        }
-                      >
-                        {item.name}
-                      </NavLink>
-                    ))}
-                  </div>
-                )}
+                {/* Desktop Dropdown */}
+{showDropdown === link.name && (
+  <div
+    className="absolute left-0 top-1 mt-4 w-56 bg-white  rounded-xl shadow-lg border border-gray-100 
+               z-50 overflow-hidden animate-fadeIn"
+  >
+    {link.dropdown.map((item, i) => (
+      <React.Fragment key={item.path}>
+        <NavLink
+          to={item.path}
+          className={({ isActive }) =>
+            isActive
+              ? "block px-4 py-2 text-[#4B771E] font-semibold text-sm bg-[#f0fdf4]"
+              : "block px-4 py-2 text-gray-700 hover:text-[#4B771E] hover:bg-gray-50 text-sm transition"
+          }
+        >
+          {item.name}
+        </NavLink>
+
+        {/* Divider except after last item */}
+        {i !== link.dropdown.length - 1 && (
+          <hr className="border-gray-200" />
+        )}
+      </React.Fragment>
+    ))}
+  </div>
+)}
+
+
               </div>
             ) : (
               <NavLink
