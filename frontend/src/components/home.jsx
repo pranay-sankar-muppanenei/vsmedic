@@ -36,7 +36,7 @@ function Home() {
     {/* Right: Text + form */}
     <div>
       <h2 className="text-3xl font-bold text-gray-900 mb-4">
-        Download Your Free <span className="text-pink-600">Motherhood Wellness Guide</span>
+        Download Your Free <span className="text-[#4B771E]">Motherhood Wellness Guide</span>
       </h2>
       <p className="text-lg text-gray-700 mb-8">
         7 Days to a <span className="italic">Healthier, Happier Pregnancy</span>.
@@ -60,7 +60,7 @@ function Home() {
         />
         <button
           type="submit"
-          className="w-full bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300"
+          className="w-full bg-[#4B771E] hover:scale-102 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300"
         >
           Download Now
         </button>
