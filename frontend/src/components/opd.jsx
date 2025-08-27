@@ -100,8 +100,7 @@ const OPD = () => {
         </div>
       </div>
     </section>
-   
-     <FAQSection />
+
 
     </>
   );

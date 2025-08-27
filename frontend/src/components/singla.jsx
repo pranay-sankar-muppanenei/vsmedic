@@ -308,38 +308,6 @@ const SinglaSlimming = () => {
 </section>
 
 
-
-      {/* Video */}
-      <section className="relative py-16 bg-[#f0fdf4]">
-        <div className="max-w-4xl mx-auto relative">
-          <img
-            src="/aboutd1.jpg"
-            alt="Video thumbnail"
-            className="rounded-xl shadow-lg w-full"
-          />
-          <button className="absolute inset-0 flex items-center justify-center">
-            <div className="bg-white text-[#4B771E] p-5 rounded-full shadow-lg hover:scale-110 transition-transform">
-              <FaPlay size={24} />
-            </div>
-          </button>
-        </div>
-      </section>
-
-      {/* FAQ + Appointment */}
-      <FAQSection />
-      <AppointmentForm />
-       <section className="py-16 bg-[#4B771E] text-white text-center mt-2 mb-1">
-        <h2 className="text-3xl font-bold mb-4">
-          Begin Your Women Wellness Journey Today
-        </h2>
-        <p className="mb-6 text-lg">
-          Join our holistic programs and experience 92% success in happy,
-          natural deliveries.
-        </p>
-        <button className="bg-white text-[#4B771E] px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">
-          Register Now
-        </button>
-      </section>
     </div>
   );
 };
