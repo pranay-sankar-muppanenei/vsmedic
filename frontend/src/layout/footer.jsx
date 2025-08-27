@@ -30,7 +30,10 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-lg">Address</h3>
           <p className="text-green-100 text-sm mt-2">
-            Nirman Nagar, Jaipur – Centrally located, private parking available.
+           1st floor, 28 Shiv Shakti Nagar, near Indo Bharat School, Nirman Nagar, Jaipur, Rajasthan 302019
+ 
+Directions
+
           </p>
           <h3 className="font-semibold text-lg mt-4">Contact</h3>
           <p className="text-green-100 text-sm mt-2">+91 98765 43210</p>
