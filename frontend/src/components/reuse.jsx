@@ -14,8 +14,8 @@ const Reuse = () => {
             The Most Interesting Hospital in the World
           </h1>
           <p className="text-gray-600 mb-8 max-w-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis.
+      At VSMEDI, we are committed to redefining healthcare with innovation, compassion, and a patient-centric approach. Our expert team is here to ensure you receive the best possible care every step of the way.
+
           </p>
           <div className="flex items-center gap-4">
             <button className="bg-[#4B771E] hover:scale-102 text-white px-6 py-3 rounded-full font-medium shadow-md hover:bg-[#3e6519] transition">

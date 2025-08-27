@@ -2,27 +2,70 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const experts = [
   {
-    name: "Dr Vibha Chaturvedi",
+    name: "Dr Vibha Chaturvedi Sharma",
     specialty: "Renowned Gynecologist & Laparoscopic Surgeon",
     description:
-      "Known for her precision, compassion, and international exposure in women’s healthcare.",
-    image: "/sd2.jpg",
+      "Expert in women's healthcare, minimally invasive surgeries, infertility, and high-risk pregnancies. Committed to personalized care with empathy and compassion.",
+    image: "/vibha.png", // ✅ you can replace with actual image if available
+  },
+  {
+    name: "Dr Nitin Negi",
+    specialty: "Consultant Urologist",
+    description:
+      "Skilled in treating urinary tract issues, kidney stones, prostate health, and male reproductive concerns. Dedicated to latest techniques and patient-centered solutions.",
+    image: "/nitin.png",
+  },
+  {
+    name: "Dr Amit Bengani Jain",
+    specialty: "General Surgeon",
+    description:
+      "Specialist in advanced surgical procedures, including laparoscopic surgeries. Focused on patient safety, quick recovery, and comprehensive surgical care.",
+    image: "/amit.png",
+  },
+  {
+    name: "Dr Surabhi Mathur",
+    specialty: "Consultant Psychiatrist",
+    description:
+      "Proficient in managing mental health issues such as depression, anxiety, and stress. Committed to holistic and confidential psychiatric treatment.",
+    image: "/shurbhi.png",
+  },
+  {
+    name: "Dr Vaibhav Mathur",
+    specialty: "Consultant Neurologist",
+    description:
+      "Expert in diagnosing and treating brain, spine, nerve, and muscle disorders. Known for integrated neurological care and innovative treatment approaches.",
+    image: "/vaibhav.png",
+  },
+  {
+    name: "Dr Manish Vaishnav",
+    specialty: "Joint Replacement Surgeon",
+    description:
+      "Specializes in joint replacement, arthroscopy, and sports injuries. Dedicated to helping patients regain mobility and live pain-free lives.",
+    image: "/manish.png",
   },
   {
     name: "Dr Anuradha Saraswat",
-    specialty: "Women Wellness & Garbh Sanskar Specialist",
+    specialty: "Women’s Wellness & Garbh Sanskar Specialist",
     description:
-      "Helping mothers enjoy safe pregnancies and complete postnatal recovery with holistic care.",
-    image: "/sd4.jpg",
+      "Promotes healthy pregnancies and safe deliveries. Emphasizes holistic healthcare, positivity, and traditional values for women and unborn child wellbeing.",
+    image: "/sars.png",
   },
   {
-    name: "Dr Vibha Chaturvedi",
-    specialty: "Renowned Gynecologist & Laparoscopic Surgeon",
+    name: "Dr Kush Bhagat",
+    specialty: "Cardiologist & Electrophysiologist",
     description:
-      "Known for her precision, compassion, and international exposure in women’s healthcare.",
-    image: "/sd1.jpg",
+      "Expert in heart health, arrhythmias, cardiac interventions, and preventive cardiology. Known for precision, advanced diagnostics, and compassionate cardiac care.",
+    image: "/kush.png",
   },
+  {
+  name: "Dr Esha Swarnkar",
+  specialty: "Ayurvedic Doctor | Nadi Vaidya Specialist",
+  description:
+    "Dynamic Ayurvedic doctor at VS Medihub, Jaipur, specializing in Nadi Vaidya since 2019. Combines traditional Ayurvedic treatments with holistic health practices. Holds a BAMS degree from Sri Sri College of Ayurvedic Science and Research Centre, Bangalore.",
+  image: "/esha.png", // replace with actual image path
+}
 ];
+
 
 export default function ExpertsSection() {
   return (
@@ -72,13 +115,13 @@ export default function ExpertsSection() {
 
               {/* Text Section */}
               <div className="flex flex-col flex-grow mt-4">
-                <div className="flex items-center gap-2 flex-wrap">
+                <div className="flex flex-col  gap-2">
                   <h3 className="text-base font-semibold text-gray-900">
                     {expert.name}
                   </h3>
-                  <span className="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded-full font-medium">
+                  <p className="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded-full font-medium">
                     {expert.specialty}
-                  </span>
+                  </p>
                 </div>
 
                 <p className="text-gray-600 text-sm text-left mt-3 flex-grow">

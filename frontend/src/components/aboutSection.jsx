@@ -49,8 +49,7 @@ const AboutSection = () => {
             We Collaborate for Better Healthcare
           </h2>
           <p className="text-gray-500 mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis.
+            At VSMEDI, we believe in joining hands to deliver the highest standards of healthcare. Our dedicated team of doctors, nurses, and healthcare professionals work together to ensure you and your loved ones receive the best medical care possible. Through constant learning and adaptation of the latest medical advancements, we strive to be the most trusted healthcare partner in your life.
           </p>
 
           <div className="mt-6 grid grid-cols-2 gap-4">
@@ -60,8 +59,8 @@ const AboutSection = () => {
                 Our Vision
               </h3>
               <p className="text-gray-500 text-sm mt-2">
-                We never get behind of the latest medical trends. Lorem ipsum
-                dolor sit.
+                To stay ahead by embracing the newest medical trends, ensuring our patients benefit from state-of-the-art care.
+
               </p>
             </div>
 
@@ -71,8 +70,8 @@ const AboutSection = () => {
                 Our Mission
               </h3>
               <p className="text-gray-500 text-sm mt-2 leading-normal">
-                The most interesting hospital in the world. Lorem ipsum dolor
-                sit amet.
+                To be a hospital known for innovation, trust, and patient-centric care, improving lives every day.
+
               </p>
             </div>
           </div>

@@ -39,8 +39,8 @@ const Contact = () => {
             Get in Touch
           </h2>
           <p className="text-gray-600 mb-6 text-sm sm:text-base leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis.
+          We’re here to help you with appointments, queries, and all your healthcare needs. Reach out to us using the details below or simply fill out the contact form.
+
           </p>
 
           {/* Contact Info */}
@@ -52,8 +52,7 @@ const Contact = () => {
               </span>
               <div>
                 <h4 className="font-semibold">Email</h4>
-                <p className="text-sm sm:text-base">meddic.info@mail.com</p>
-                <p className="text-sm sm:text-base">example@mails.com</p>
+                <p className="text-sm sm:text-base">info@vsenterprise.in</p>
               </div>
             </div>
 
@@ -64,7 +63,7 @@ const Contact = () => {
               </span>
               <div>
                 <h4 className="font-semibold">Our Number</h4>
-                <p className="text-sm sm:text-base">+91 98765 43210</p>
+                <p className="text-sm sm:text-base">+91 72404 45656</p>
               </div>
             </div>
 
@@ -76,7 +75,8 @@ const Contact = () => {
               <div>
                 <h4 className="font-semibold">Address</h4>
                 <p className="text-sm sm:text-base">
-                  Nirman Nagar, Jaipur – Centrally located
+                  28, First Floor, Shiv Shakti Nagar, Nirman Nagar, Jaipur 302019
+
                 </p>
               </div>
             </div>

@@ -2,28 +2,29 @@ import React, { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
 const FAQSection = () => {
-  const faqs = [
-    {
-      question: "How do I make an appointment at Meddic?",
-      answer:
-        "You can make an appointment by calling our reception or booking online through our website.",
-    },
-    {
-      question: "Do you have a pediatrician?",
-      answer:
-        "Yes, we have experienced pediatricians available for appointments.",
-    },
-    {
-      question: "Does your place provide health insurance?",
-      answer:
-        "We work with several insurance providers. Please check with us for details.",
-    },
-    {
-      question: "What payment methods do you provide?",
-      answer:
-        "We accept cash, credit/debit cards, and UPI payments.",
-    },
-  ];
+const faqs = [
+  {
+    question: "How do I make an appointment at VSMEDI?",
+    answer:
+      "Booking an appointment is simple. You can book online through our website, or call us directly at +91 72404 45656, or visit our hospital reception during working hours.",
+  },
+  {
+    question: "Do you have a pediatrician?",
+    answer:
+      "Yes, we have an experienced team of pediatricians to take care of your child’s health and wellbeing, right from routine checkups to specialized treatments.",
+  },
+  {
+    question: "Does your place provide health insurance?",
+    answer:
+      "Yes, We accept all major health insurance policies and offer guidance to help you with the insurance claim process. For more details, please contact our support team.",
+  },
+  {
+    question: "What payment methods do you provide?",
+    answer:
+      "We accept payments via cash, debit/credit cards, UPI, net banking, and digital wallets for your convenience.",
+  },
+];
+
 
   const [openIndex, setOpenIndex] = useState(null);
 

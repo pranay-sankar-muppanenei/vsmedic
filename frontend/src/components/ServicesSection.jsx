@@ -11,7 +11,7 @@ const services = [
     cta: "Book an OPD Slot",
   },
   {
-    id: "women-wellness",
+    id: "srajan",
     icon: <FiUser className="text-[#4B771E] text-4xl" />,
     title: "SRAJAN Women Wellness",
     description:
@@ -45,7 +45,7 @@ export default function ServicesSection() {
           {services.map((service) => (
             <div
               key={service.id}
-              onClick={() => navigate(`/services/${service.id}`)}
+              onClick={() => navigate(`/${service.id}`)}
               className="cursor-pointer bg-white p-8 rounded-xl shadow-sm border border-gray-200 
                          transition-transform duration-300 hover:scale-[1.05] hover:shadow-lg hover:border-[#4B771E] 
                          flex flex-col items-center text-center"

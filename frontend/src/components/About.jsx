@@ -7,20 +7,51 @@ import ExpertsSection from "./expertsSection";
 import Reuse from "./reuse";
 
 const statsData = [
-  { number: 25, suffix: "+", label: "Years of Experience" },
-  { number: 140, suffix: "+", label: "Specialist Doctors" },
-  { number: 500, suffix: "+", label: "Professional Nurses", highlight: true },
-  { number: 99, suffix: "%", label: "Positive Reviews" },
+  { number: 25, suffix: "+", label: "Years of Experience",label2:"Decades of expertise in delivering quality healthcare." },
+  { number: 140, suffix: "+", label: "Specialist Doctors",label2:"A wide network of leading healthcare experts across all specialties." },
+  { number: 500, suffix: "+", label: "Professional Nurses", highlight: true,label2:"Compassionate and skilled nursing staff dedicated to your comfort and recovery." },
+  { number: 99, suffix: "%", label: "Positive Reviews" ,label2:"Trusted and recommended by thousands of satisfied patients and their families."},
 ];
 
 const valuesData = [
-  { icon: <FaHome className="text-[#4B771E] text-2xl" />, title: "Honesty" },
-  { icon: <FaPen className="text-[#4B771E] text-2xl" />, title: "Learning" },
-  { icon: <FaLock className="text-[#4B771E] text-2xl" />, title: "Trust" },
-  { icon: <FaHeart className="text-[#4B771E] text-2xl" />, title: "Passion" },
-  { icon: <FaEye className="text-[#4B771E] text-2xl" />, title: "Vision" },
-  { icon: <FaLightbulb className="text-[#4B771E] text-2xl" />, title: "Future" },
+  {
+    icon: <FaHome className="text-[#4B771E] text-2xl" />,
+    title: "Honesty",
+    description:
+      "We practice openness and transparency in all our interactions, building trust with every patient.",
+  },
+  {
+    icon: <FaPen className="text-[#4B771E] text-2xl" />,
+    title: "Learning",
+    description:
+      "Our team is committed to continuous learning, adapting to the latest in medicine for the best patient outcomes.",
+  },
+  {
+    icon: <FaLock className="text-[#4B771E] text-2xl" />,
+    title: "Trust",
+    description:
+      "Your wellbeing is our top priority. We foster trust through integrity, empathy, and reliable healthcare.",
+  },
+  {
+    icon: <FaHeart className="text-[#4B771E] text-2xl" />,
+    title: "Passion",
+    description:
+      "We are driven by our passion to heal, serve, and make a difference in every patient's life.",
+  },
+  {
+    icon: <FaEye className="text-[#4B771E] text-2xl" />,
+    title: "Vision",
+    description:
+      "We look forward to a healthier future, providing progressive and innovative solutions to every healthcare need.",
+  },
+  {
+    icon: <FaLightbulb className="text-[#4B771E] text-2xl" />,
+    title: "Future",
+    description:
+      "Embracing change and technology, we aim to shape the future of healthcare with progressive treatments and compassionate care.",
+  },
 ];
+
 
 const About = () => {
   const [counts, setCounts] = useState(statsData.map(() => 0));
@@ -95,10 +126,17 @@ const About = () => {
             </h3>
             <p
               className={`${
+                stat.highlight ? "text-green-100" : "text-gray-900"
+              } mt-2 font-bold`}
+            >
+              {stat.label}
+            </p>
+            <p
+              className={`${
                 stat.highlight ? "text-green-100" : "text-gray-600"
               } mt-2`}
             >
-              {stat.label}
+              {stat.label2}
             </p>
           </div>
         ))}
@@ -119,8 +157,7 @@ const About = () => {
               <div className="mb-4">{value.icon}</div>
               <h3 className="text-lg font-semibold mb-2">{value.title}</h3>
               <p className="text-gray-600 text-sm">
-                Lorem ipsum dolor sit amet, consect etur adipiscing elit. Ut
-                elit tellus, luctus nec ullamcorper mattis.
+               {value.description}
               </p>
             </div>
           ))}
