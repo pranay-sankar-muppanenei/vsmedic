@@ -42,7 +42,7 @@ export default function ProblemSolution() {
         {/* Right Side - Clinic Image */}
         <div className="relative">
           <img
-            src="/visit.jpg"
+            src="/og.png"
             alt="VS MediHUB Clinic"
             className="rounded-2xl shadow-lg object-cover w-full h-[500px] brightness-95"
           />

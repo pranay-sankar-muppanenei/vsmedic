@@ -30,7 +30,7 @@ const Reuse = () => {
         {/* Right Image */}
         <div className="order-1 md:order-2 flex-1 mt-8 md:mt-0 flex justify-center">
           <img
-            src="/doc4.png"
+            src="/og.png"
             alt="Doctor"
             className="w-full max-w-md object-contain"
           />

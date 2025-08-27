@@ -99,11 +99,11 @@ const About = () => {
       <h1 className="text-center text-[#4B771E] text-3xl font-bold tracking-wide mb-6">About Us</h1>
 
       {/* Image */}
-      <div className="w-full flex justify-center mb-10">
+      <div className="w-full flex justify-center mb-10 px-4">
         <img
-          src="/a.jpg"
+          src="/contact.webp"
           alt="Contact"
-          className="w-full h-[500px] max-w-6xl rounded-lg shadow-md"
+          className="w-full h-[250px] sm:h-[350px] lg:h-[400px] max-w-6xl rounded-lg shadow-md object-cover"
         />
       </div>
       <AboutSection />

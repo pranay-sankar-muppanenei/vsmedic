@@ -47,7 +47,7 @@ export default function LocationContactSection() {
         {/* Image Section */}
         <div>
           <img
-            src="/visit.jpg"
+            src="/og.png"
             alt="VS MediHUB Location"
             className="w-full rounded-xl shadow-lg object-cover"
           />
