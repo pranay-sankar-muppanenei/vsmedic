@@ -22,7 +22,7 @@ const Contact = () => {
       {/* Image */}
       <div className="w-full flex justify-center mb-10 px-4">
         <img
-          src="/contact.jpg"
+          src="/contact.webp"
           alt="Contact"
           className="w-full h-[250px] sm:h-[350px] lg:h-[400px] max-w-6xl rounded-lg shadow-md object-cover"
         />

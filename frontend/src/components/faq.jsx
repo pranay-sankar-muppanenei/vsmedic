@@ -39,9 +39,9 @@ const faqs = [
         {/* Left Image */}
         <div className="flex-1">
           <img
-            src="/visit.jpg"
+            src="/faq.webp"
             alt="Doctors"
-            className="rounded-lg shadow-md w-full"
+            className="rounded-lg shadow-md w-full h-[500px]"
           />
         </div>
 

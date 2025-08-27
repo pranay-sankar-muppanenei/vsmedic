@@ -9,6 +9,7 @@ import ServiceDetail from "./components/serviceDetail";
 import Doctors from "./components/Doctors"
 import ServiceDetail2 from "./components/serviceDetail2";
 import SrajanWomenWellness from "./components/srajan";
+import SinglaSlimming from "./components/singla";
 import OPD from "./components/opd";
 import NotFound from "./components/NotFound"; // import the 404 page
 
@@ -28,7 +29,8 @@ function App() {
      <Route path="/services/:id" element={<ServiceDetail />} />
      <Route path="/service-detail" element={<ServiceDetail2 />} />
           <Route path='/doctors' element={<Doctors/>}/>
-          <Route path='/srajan' element={<SrajanWomenWellness/>}/>   
+          <Route path='/srajan' element={<SrajanWomenWellness/>}/> 
+          <Route path='/singla' element={<SinglaSlimming/>}/>   
           <Route path='/opd' element={<OPD/>}/>       {/* This must be last */}
           <Route path="*" element={<NotFound />} />
         </Routes>
