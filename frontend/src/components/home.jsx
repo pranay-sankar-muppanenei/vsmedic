@@ -21,7 +21,6 @@ function Home() {
       <ServicesSection/>
       <WhyChooseVsMediHub/>
       <PatientJourneys/>
-      <ExpertsSection/>
       <section className="bg-white py-16 px-6">
   <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
     {/* Left: eBook visual */}

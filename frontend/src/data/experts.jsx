@@ -34,13 +34,7 @@ export const experts = [
       "Specializes in joint replacement, arthroscopy, and sports injuries. Dedicated to helping patients regain mobility and live pain-free lives.",
     image: "/manish.png",
   },
-  {
-    name: "Dr Anuradha Saraswat",
-    specialty: "Women’s Wellness & Garbh Sanskar Specialist",
-    description:
-      "Promotes healthy pregnancies and safe deliveries. Emphasizes holistic healthcare, positivity, and traditional values for women and unborn child wellbeing.",
-    image: "/sars.png",
-  },
+
   {
     name: "Dr Kush Bhagat",
     specialty: "Cardiologist & Electrophysiologist",
@@ -48,7 +42,15 @@ export const experts = [
       "Expert in heart health, arrhythmias, cardiac interventions, and preventive cardiology. Known for precision, advanced diagnostics, and compassionate cardiac care.",
     image: "/kush.png",
   },
-   {
+   
+  {
+    name: "Dr Esha Swarnkar",
+    specialty: "Ayurvedic Doctor | Nadi Vaidya Specialist",
+    description:
+      "Dynamic Ayurvedic doctor at VS Medihub, Jaipur, specializing in Nadi Vaidya since 2019. Combines traditional Ayurvedic treatments with holistic health practices. Holds a BAMS degree from Sri Sri College of Ayurvedic Science and Research Centre, Bangalore.",
+    image: "/esha.png",
+  },
+  {
     name: "Dr Amit Bengani Jain",
     specialty: "General Surgeon",
     description:
@@ -56,10 +58,10 @@ export const experts = [
     image: "/amit.png",
   },
   {
-    name: "Dr Esha Swarnkar",
-    specialty: "Ayurvedic Doctor | Nadi Vaidya Specialist",
+    name: "Dr Anuradha Saraswat",
+    specialty: "Women’s Wellness & Garbh Sanskar Specialist",
     description:
-      "Dynamic Ayurvedic doctor at VS Medihub, Jaipur, specializing in Nadi Vaidya since 2019. Combines traditional Ayurvedic treatments with holistic health practices. Holds a BAMS degree from Sri Sri College of Ayurvedic Science and Research Centre, Bangalore.",
-    image: "/esha.png",
+      "Promotes healthy pregnancies and safe deliveries. Emphasizes holistic healthcare, positivity, and traditional values for women and unborn child wellbeing.",
+    image: "/sars.png",
   },
 ];

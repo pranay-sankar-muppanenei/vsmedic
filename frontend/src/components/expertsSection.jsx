@@ -15,13 +15,7 @@ const experts = [
       "Skilled in treating urinary tract issues, kidney stones, prostate health, and male reproductive concerns. Dedicated to latest techniques and patient-centered solutions.",
     image: "/nitin.png",
   },
-  {
-    name: "Dr Amit Bengani Jain",
-    specialty: "General Surgeon",
-    description:
-      "Specialist in advanced surgical procedures, including laparoscopic surgeries. Focused on patient safety, quick recovery, and comprehensive surgical care.",
-    image: "/amit.png",
-  },
+  
   {
     name: "Dr Surabhi Mathur",
     specialty: "Consultant Psychiatrist",
@@ -56,6 +50,13 @@ const experts = [
     description:
       "Expert in heart health, arrhythmias, cardiac interventions, and preventive cardiology. Known for precision, advanced diagnostics, and compassionate cardiac care.",
     image: "/kush.png",
+  },
+  {
+    name: "Dr Amit Bengani Jain",
+    specialty: "General Surgeon",
+    description:
+      "Specialist in advanced surgical procedures, including laparoscopic surgeries. Focused on patient safety, quick recovery, and comprehensive surgical care.",
+    image: "/amit.png",
   },
   {
   name: "Dr Esha Swarnkar",

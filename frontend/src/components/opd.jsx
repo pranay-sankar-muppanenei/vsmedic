@@ -102,7 +102,7 @@ const OPD = () => {
     </section>
    
      <FAQSection />
-      <AppointmentForm />
+
     </>
   );
 };

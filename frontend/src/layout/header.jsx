@@ -20,14 +20,7 @@ const Header = () => {
         { name: "MultiSpeciality OPD's", path: "/opd" },
       ],
     },
-    {
-      name: "PAGES",
-      path: "/pages",
-      dropdown: [
-        { name: "Doctors", path: "/doctors" },
-        { name: "Page 2", path: "/pages/page2" },
-      ],
-    },
+   
     { name: "CONTACT", path: "/contact" },
   ];
 
