@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FiPhoneCall } from "react-icons/fi";
 
-const images = ["/vibha.png", "/vaibhav.png", "/esha.png", "/nitin.png","shurbhi.png"];
+const images = ["/vibhar.png", "/vaibhavr.png", "/eshar.png", "/nitinr.png","shurbhir.png","amitr.png","manishr.png","kushr.png","sars.png"];
 
 const HeroSection = () => {
   const [currentImage, setCurrentImage] = useState(0);
