@@ -18,7 +18,7 @@ const Header = () => {
         { name: "Services", path: "/services" },
         { name: "SrajanWomenWellness", path: "/srajan" },
         { name: "MultiSpeciality OPD's", path: "/opd" },
-        {name:"Singla Slimming Center",path:"/services/slimming"},
+        {name:"Singla Slimming Center",path:"/singla"},
       ],
     },
    
