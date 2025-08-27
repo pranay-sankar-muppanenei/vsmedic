@@ -167,15 +167,16 @@ const Contact = () => {
 
       {/* FAQ & Reuse sections */}
       <div className="mt-10 px-4 sm:px-0">
-        <div className="relative mx-auto w-3/4 pb-[30%] rounded-xl shadow-lg overflow-hidden">
+ <div className="relative mx-auto w-3/4 pb-[30%] rounded-xl shadow-lg overflow-hidden">
   <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.518258267872!2d75.7561!3d26.8957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5edc59ff2e7%3A0x3f9b0b15f7c82b0d!2sVS%20MediHUB!5e0!3m2!1sen!2sin!4v1705052939212!5m2!1sen!2sin"
-    class="absolute top-0 left-0 w-full h-full border-0"
-    allowfullscreen=""
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6060.757384247391!2d75.74793494015962!3d26.8841343566565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db57ef64eb809%3A0xc1c945b52484215c!2sVS%20MediHUB!5e1!3m2!1sen!2sin!4v1756282946412!5m2!1sen!2sin"
+    className="absolute top-0 left-0 w-full h-full border-0"
+    allowFullScreen=""
     loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
 </div>
+
 
         <FAQSection />
         <Reuse />
