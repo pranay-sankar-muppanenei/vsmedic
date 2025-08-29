@@ -65,8 +65,7 @@ Directions
         </div>
       </div>
 
-      {/* Newsletter */}
-      <div className="max-w-7xl mx-auto px-6 mt-6 text-center">
+      {/*  <div className="max-w-7xl mx-auto px-6 mt-6 text-center">
         <h3 className="text-lg font-medium">Subscribe to Our Newsletter</h3>
         <form className="mt-4 flex flex-col sm:flex-row justify-center gap-3">
           <input
@@ -81,10 +80,11 @@ Directions
             Subscribe
           </button>
         </form>
-      </div>
+      </div> */}
+     
 
       {/* Footer Bottom */}
-      <div className="border-t border-green-300 mt-8 py-4 text-center text-sm text-green-100 space-y-2 px-4">
+      <div className="border-t border-green-300 mt-8 py-4 flex justify-between  text-sm text-green-100 space-y-2 px-4">
         <p>© 2025 VS MediHUB – All rights reserved.</p>
         <p>Medical license & certifications displayed.</p>
         <p>
