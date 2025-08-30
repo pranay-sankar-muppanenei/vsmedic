@@ -1,5 +1,6 @@
 // src/components/Reuse.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Reuse = () => {
   return (
@@ -14,16 +15,18 @@ const Reuse = () => {
             The Most Interesting Hospital in the World
           </h1>
           <p className="text-gray-600 mb-8 max-w-lg">
-      At VSMEDI, we are committed to redefining healthcare with innovation, compassion, and a patient-centric approach. Our expert team is here to ensure you receive the best possible care every step of the way.
-
+            At VSMEDI, we are committed to redefining healthcare with innovation, compassion, and a patient-centric approach. Our expert team is here to ensure you receive the best possible care every step of the way.
           </p>
           <div className="flex items-center gap-4">
             <button className="bg-[#4B771E] hover:scale-102 text-white px-6 py-3 rounded-full font-medium shadow-md hover:bg-[#3e6519] transition">
               Get Started
             </button>
-            <button className="border border-[#cfe3c4] hover:scale-102 px-6 py-3 rounded-full font-medium text-gray-800 hover:bg-[#f2f8f0] transition">
+            <Link
+              to="/contact" onClick={() => window.scrollTo(0, 0)}
+              className="border border-[#cfe3c4] hover:scale-102 px-6 py-3 rounded-full font-medium text-gray-800 hover:bg-[#f2f8f0] transition"
+            >
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
 

@@ -13,11 +13,11 @@ const faqs = [
     answer:
       "Yes, we have an experienced team of pediatricians to take care of your child’s health and wellbeing, right from routine checkups to specialized treatments.",
   },
-  {
-    question: "Does your place provide health insurance?",
-    answer:
-      "Yes, We accept all major health insurance policies and offer guidance to help you with the insurance claim process. For more details, please contact our support team.",
-  },
+ {
+  question: "Do you offer diagnostic services?",
+  answer: "Yes, we provide comprehensive in-house diagnostic services for accurate and timely results.",
+}
+,
   {
     question: "What payment methods do you provide?",
     answer:

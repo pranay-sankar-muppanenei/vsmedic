@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiPlay, FiX, FiCheck } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -42,8 +43,8 @@ const AboutSection = () => {
 
         {/* Right Content */}
         <div className="flex-1 flex flex-col gap-5">
-          <p className="text-[#4B771E] font-semibold uppercase tracking-widest">
-            About VsMedi
+          <p className="text-[#4B771E] font-semibold  tracking-widest">
+            ABOUT VS MediHUB
           </p>
           <h2 className="text-3xl md:text-4xl mt-2">
             We Collaborate for Better Healthcare
@@ -75,10 +76,11 @@ const AboutSection = () => {
               </p>
             </div>
           </div>
-
+<Link to="/about" onClick={() => window.scrollTo(0, 0)}>
           <button className="self-start mt-6 bg-[#4B771E] text-white px-6 py-3 rounded-full shadow-lg hover:bg-[#3b5f18] transition-transform hover:scale-105">
             Learn More
           </button>
+          </Link>
         </div>
       </div>
 
@@ -97,7 +99,8 @@ const AboutSection = () => {
             <iframe
               width="100%"
               height="500"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/hv1tAGEbpqg"
+
               title="Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

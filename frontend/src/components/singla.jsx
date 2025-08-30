@@ -1,27 +1,13 @@
 // src/pages/SrajanWomenWellness.jsx
-import React from "react";
+import React,{ useState }  from "react";
+import ConsultationFormModal from "./bookconsult";
 import FAQSection from "./faq";
 import AppointmentForm from "./appointment";
 import { FaPlay, FaLeaf, FaHeartbeat, FaBaby } from "react-icons/fa";
 
 const SinglaSlimming = () => {
-  const advantages = [
-    "Expert-led prenatal & postnatal yoga programs",
-    "Authentic Ayurveda therapies for holistic healing",
-    "Personalised counselling & lifestyle correction",
-    "Focus on Physical, Emotional, Social & Spiritual health",
-    "Positive mind training for healthy labor & delivery",
-  ];
 
-  const plans = [
-    { name: "Pranayama & Meditation", price: "₹2000" },
-    { name: "Garbh Sanskar Sessions", price: "₹2000" },
-    { name: "Couple Yoga", price: "₹1000" },
-    { name: "Mother / Mother-in-law Sessions", price: "₹1000" },
-    { name: "Personal Counselling (3 sessions)", price: "₹4500" },
-    { name: "Full Monthly Wellness Package", price: "₹12000" },
-  ];
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -29,14 +15,18 @@ const SinglaSlimming = () => {
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
           <div className="flex-1">
             <h1 className="text-4xl md:text-5xl font-bold text-[#4B771E] mb-6">
-              Singla Slimming Centre
+              Singla Slimming Clinic
             </h1>
             <p className="text-lg text-gray-700 mb-6">
               Transform your body and health with expert weight management programs, advanced slimming therapies, inch-loss treatments, diet planning, and personalized fitness guidance for a healthier, confident you.
             </p>
-            <button className="bg-[#4B771E] text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">
+            <button onClick={() => setIsModalOpen(true)} className="bg-[#4B771E] text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">
               Book a Consultation
             </button>
+            <ConsultationFormModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
           </div>
           <div className="flex-1">
             <img
@@ -164,7 +154,7 @@ const SinglaSlimming = () => {
           <img
             src={plan.image}
             alt={plan.name}
-            className="rounded-lg w-full h-40 object-cover"
+            className="rounded-lg w-full h-40 object-contain"
           />
         </div>
 
@@ -288,7 +278,7 @@ const SinglaSlimming = () => {
             <img
               src={testimonial.image}
               alt="Before After Transformation"
-              className="rounded-lg w-full h-[300px] object-cover group-hover:scale-105 transition duration-500"
+              className="rounded-lg w-full h-[300px] object-contain group-hover:scale-105 transition duration-500"
             />
 
             {/* Aura overlay */}

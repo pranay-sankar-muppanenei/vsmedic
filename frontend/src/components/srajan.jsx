@@ -1,10 +1,20 @@
 // src/pages/SrajanWomenWellness.jsx
-import React from "react";
+import React,{useState} from "react";
 import FAQSection from "./faq";
 import AppointmentForm from "./appointment";
+import PlansSection from "./modal";
+import ConsultationFormModal from "./bookconsult";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { FaPlay, FaLeaf, FaHeartbeat, FaBaby } from "react-icons/fa";
 
 const SrajanWomenWellness = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
   const advantages = [
     "Expert-led prenatal & postnatal yoga programs",
     "Authentic Ayurveda therapies for holistic healing",
@@ -29,17 +39,22 @@ const SrajanWomenWellness = () => {
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
           <div className="flex-1">
             <h1 className="text-4xl md:text-5xl font-bold text-[#4B771E] mb-6">
-              SRAJAN Women Wellness
+              Srajan Sanjeevani Women Wellness
             </h1>
             <p className="text-lg text-gray-700 mb-6">
               Uncover the secrets of a pain-free, smooth journey for a normal
               delivery through Garbh Sanskar, prenatal yoga, postnatal recovery,
               lactation planning, and authentic Ayurveda therapies.
             </p>
-            <button className="bg-[#4B771E] text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">
-              Book a Consultation
-            </button>
+            <button onClick={() => setIsModalOpen(true)} className="bg-[#4B771E] text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">
+                          Book a Consultation
+                        </button>
+                      
           </div>
+            <ConsultationFormModal
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                  />
           <div className="flex-1">
             <img
               src="/visit.jpg"
@@ -107,23 +122,26 @@ const SrajanWomenWellness = () => {
 
 
       {/* Advantages */}
-    <section className="bg-[#f9fafb] py-16">
+<section className="bg-[#f9fafb] py-16">
   <div className="max-w-6xl mx-auto px-6">
-    <h2 className="text-3xl font-semibold text-gray-800 mb-10">
+    <h2 className="text-3xl text-center font-semibold text-gray-800 mb-10">
       Why Choose Us
     </h2>
-    <div className="grid md:grid-cols-3 gap-8">
+
+    {/* Flex wrapper */}
+    <div className="flex flex-wrap justify-center gap-8">
       {advantages.map((adv, idx) => (
         <div
           key={idx}
           className="group relative p-6 bg-white rounded-xl shadow-sm hover:shadow-2xl 
-                     transition duration-500 transform hover:-translate-y-2"
+                     transition duration-500 transform hover:-translate-y-2
+                     flex-1 min-w-[280px] max-w-[350px]"
         >
           {/* Aura Glow */}
           <div className="absolute inset-0 rounded-xl bg-green-100 opacity-0 group-hover:opacity-30 blur-2xl transition duration-500"></div>
 
           {/* Card Content */}
-          <div className="relative z-10">
+          <div className="relative z-10 text-center">
             <div className="text-[#4B771E] mb-4 text-4xl group-hover:scale-110 transition duration-500">
               {idx % 3 === 0 ? (
                 <FaLeaf />
@@ -142,62 +160,12 @@ const SrajanWomenWellness = () => {
 </section>
 
 
-      {/* Plans */}
-      <section className="py-16 max-w-6xl mx-auto px-6 text-center">
-  {/* Heading */}
-  <p className="text-md font-semibold text-[#4B771E] tracking-widest uppercase">
-    Health Care Plans
-  </p>
-  <h2 className="text-4xl text-gray-900 mt-2">
-    Choose from Specialised Wellness Packages
-  </h2>
-  <p className="text-gray-600 mt-4 mb-10">
-    Designed for every stage of motherhood and holistic wellness.
-  </p>
 
-  {/* Cards */}
-  <div className="grid md:grid-cols-3 gap-6">
-    {plans.map((plan, idx) => (
-      <div
-        key={idx}
-        className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm 
-                   transition-all duration-300 flex flex-col justify-between
-                   hover:border-[#4B771E] hover:shadow-lg hover:shadow-[#4B771E]/30 hover:scale-[1.03]"
-      >
-        {/* Plan Info */}
-        <div>
-          <h3 className="text-xl font-bold text-gray-900">{plan.name}</h3>
-          <p className="text-[#4B771E] text-2xl font-semibold mt-2">
-            {plan.price}
-          </p>
-        </div>
 
-        {/* CTA */}
-        <button
-          className="mt-6 bg-[#4B771E] text-white py-2 px-6 rounded-full 
-                     transition-all duration-300 border border-transparent
-                     hover:bg-white hover:text-[#4B771E] hover:border-[#4B771E] 
-                     hover:shadow-lg hover:shadow-[#4B771E]/30"
-        >
-          Enroll Now
-        </button>
-        <p className="text-xs text-gray-500 mt-2">
-          *Terms and Conditions apply
-        </p>
-      </div>
-    ))}
-  </div>
+<PlansSection plans={plans} />
 
-  {/* Full-width custom plan box */}
-  <div className="mt-12 mb-12 border border-gray-200 py-6 rounded-lg w-full flex justify-center items-center">
-    <p className="text-gray-700 text-lg">
-      Need a customised wellness plan?{" "}
-      <a href="#" className="text-[#4B771E] font-semibold hover:underline">
-        Let&apos;s Talk!
-      </a>
-    </p>
-  </div>
-</section>
+      {/* FAQ Section */}
+      <FAQSection />
 {/* Testimonials Section */}
 <section className="bg-[#f9f9ff] py-16">
   <div className="max-w-6xl mx-auto px-6 text-center">
@@ -208,37 +176,72 @@ const SrajanWomenWellness = () => {
       Real Experiences, Real Smiles
     </h2>
 
-    {/* Grid of testimonials */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    {/* Swiper Carousel */}
+    <Swiper
+      modules={[Navigation, Pagination, Autoplay]}
+      spaceBetween={20}
+      slidesPerView={1}
+      breakpoints={{
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      }}
+      pagination={{ clickable: true }}
+      navigation
+      autoplay={{ delay: 3000, disableOnInteraction: false }}
+      className="pb-10"
+    >
       {[
         { image: "/mom1.jpg", text: "The yoga sessions made my pregnancy journey smooth & peaceful." },
         { image: "/mom2.jpg", text: "Garbh Sanskar classes brought positivity & confidence." },
         { image: "/mom3.jpg", text: "Personal counselling really helped me recover post-delivery." },
+                { image: "/mom3.jpg", text: "Personal counselling really helped me recover post-delivery." },
+                        { image: "/mom3.jpg", text: "Personal counselling really helped me recover post-delivery." },
       ].map((testimonial, idx) => (
-        <div
-          key={idx}
-          className="group relative bg-white rounded-xl shadow-sm p-4 overflow-hidden
-                     transition duration-500 hover:shadow-xl hover:-translate-y-2"
-        >
-          {/* Image */}
-          <div className="relative">
-            <img
-              src={testimonial.image}
-              alt="Mother experience"
-              className="rounded-lg w-full h-[280px] object-cover group-hover:scale-105 transition duration-500"
-            />
+        <SwiperSlide key={idx}>
+          <div
+            className="group relative bg-white rounded-xl shadow-sm p-4 overflow-hidden
+                       transition duration-500 hover:shadow-xl hover:-translate-y-2"
+          >
+            {/* Image */}
+            <div className="relative">
+              <img
+                src={testimonial.image}
+                alt="Mother experience"
+                className="rounded-lg w-full h-[280px] object-cover group-hover:scale-105 transition duration-500"
+              />
 
-            {/* Aura overlay */}
-            <div className="absolute inset-0 bg-[#4B771E]/20 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+              {/* Aura overlay */}
+              <div className="absolute inset-0 bg-[#4B771E]/20 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+            </div>
+
+            {/* Text */}
+            <p className="mt-4 text-gray-700 italic text-sm">“{testimonial.text}”</p>
           </div>
-
-          {/* Text */}
-          <p className="mt-4 text-gray-700 italic text-sm">“{testimonial.text}”</p>
-        </div>
+        </SwiperSlide>
       ))}
-    </div>
+    </Swiper>
   </div>
+  <style jsx global>{`
+        .swiper-button-next,
+        .swiper-button-prev {
+          color: #4B771E !important; /* arrow color */
+          font-weight: bold;
+          z-index: 10;
+    
+        }
+
+        .swiper-pagination-bullet {
+          background: #ccc !important; /* inactive dot */
+          opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+          background: #4B771E !important; /* active dot */
+        }
+      `}</style>
 </section>
+
 
 
     
@@ -250,9 +253,13 @@ const SrajanWomenWellness = () => {
           Join our holistic programs and experience 92% success in happy,
           natural deliveries.
         </p>
-        <button className="bg-white text-[#4B771E] px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">
-          Register Now
-        </button>
+        <button onClick={() => setIsModalOpen(true)} className="bg-white text-black px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">
+                          Book a Consultation
+                        </button>
+                        <ConsultationFormModal
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                  />
       </section>
     </div>
   );

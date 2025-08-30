@@ -1,4 +1,5 @@
-import React from "react";
+import React,{useState} from "react";
+import ConsultationFormModal from "./bookconsult";
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { experts } from "../data/experts";
 import FAQSection from "./faq";
@@ -6,6 +7,7 @@ import AppointmentForm from "./appointment";
 
 
 const OPD = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
     <section className="relative bg-gradient-to-r from-[#e6f4ea] to-[#fefefe] py-16">
@@ -18,9 +20,13 @@ const OPD = () => {
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               Jaipur’s leading specialists in Cardiology, Orthopaedics, Neurology, Gynaecology, and more — all under one roof, with minimal waiting.
             </p>
-            <button className="bg-[#4B771E] text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">
-              Book a Consultation
-            </button>
+            <button onClick={() => setIsModalOpen(true)} className="bg-[#4B771E] text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">
+                          Book a Consultation
+                        </button>
+                        <ConsultationFormModal
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                  />
           </div>
           {/* Right */}
           <div className="flex-1">
@@ -92,7 +98,7 @@ const OPD = () => {
 
                 {/* Book Button */}
                 <button className="mt-4 px-4 py-2 bg-[#4B771E] text-white rounded-full hover:bg-[#3b5f18] transition self-center">
-                  Book with {doctor.name.split(" ")[1]}
+                  Book Appointment
                 </button>
               </div>
             </div>

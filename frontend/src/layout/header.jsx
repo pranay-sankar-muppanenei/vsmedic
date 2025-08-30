@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiMenu, HiX } from "react-icons/hi";
+import ConsultationFormModal from "../components/bookconsult";
+import { FiChevronDown } from "react-icons/fi"; // added for dropdown arrow
 
 const Header = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(null); // For desktop dropdowns
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // For mobile menu toggle
   const [mobileDropdown, setMobileDropdown] = useState(null); // For mobile dropdowns
@@ -15,13 +18,11 @@ const Header = () => {
       name: "SERVICES",
       path: "/services",
       dropdown: [
-        { name: "Services", path: "/services" },
         { name: "SrajanWomenWellness", path: "/srajan" },
         { name: "MultiSpeciality OPD's", path: "/opd" },
-        {name:"Singla Slimming Center",path:"/singla"},
+        { name: "Singla Slimming Center", path: "/singla" },
       ],
     },
-   
     { name: "CONTACT", path: "/contact" },
   ];
 
@@ -29,7 +30,10 @@ const Header = () => {
     <header className="bg-[#f5f5fd] py-4 border-b border-gray-200 relative">
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo */}
-        <NavLink to='/' className="flex items-center space-x-4 border-r border-gray-300 pr-6">
+        <NavLink
+          to="/"
+          className="flex items-center space-x-4 border-r border-gray-300 pr-6"
+        >
           <img
             src="/logo.png"
             alt="Meddic Logo"
@@ -43,7 +47,7 @@ const Header = () => {
             link.dropdown ? (
               <div
                 key={link.path}
-                className="relative"
+                className="relative flex items-center"
                 onMouseEnter={() => setShowDropdown(link.name)}
                 onMouseLeave={() => setShowDropdown(null)}
               >
@@ -51,19 +55,24 @@ const Header = () => {
                   to={link.path}
                   className={({ isActive }) =>
                     isActive
-                      ? "text-[#4B771E] font-bold"
-                      : "text-gray-500 hover:text-[#4B771E] transition"
+                      ? "text-[#4B771E] font-bold flex items-center gap-1"
+                      : "text-gray-500 hover:text-[#4B771E] transition flex items-center gap-1"
                   }
                 >
                   {link.name}
+                  {/* Dropdown Arrow */}
+                  <FiChevronDown
+                    className={`transform transition-transform duration-300 ${
+                      showDropdown === link.name ? "rotate-180" : ""
+                    }`}
+                  />
                 </NavLink>
 
                 {/* Desktop Dropdown */}
-                {/* Desktop Dropdown */}
-{showDropdown === link.name && (
+            {showDropdown === link.name && (
   <div
-    className="absolute left-0 top-1 mt-4 w-56 bg-white  rounded-xl shadow-lg border border-gray-100 
-               z-50 overflow-hidden animate-fadeIn"
+    className="absolute left-0 top-1 mt-4 w-60 bg-white rounded-2xl shadow-xl border border-gray-200
+               z-50 overflow-hidden animate-fadeIn scale-95 origin-top transition-transform duration-200"
   >
     {link.dropdown.map((item, i) => (
       <React.Fragment key={item.path}>
@@ -71,22 +80,19 @@ const Header = () => {
           to={item.path}
           className={({ isActive }) =>
             isActive
-              ? "block px-4 py-2 text-[#4B771E] font-semibold text-sm bg-[#f0fdf4]"
-              : "block px-4 py-2 text-gray-700 hover:text-[#4B771E] hover:bg-gray-50 text-sm transition"
+              ? "block px-5 py-3 text-[#4B771E] text-md font-semibold text-sm bg-[#f0fdf4] transition-colors"
+              : "block px-5 py-3 text-gray-700 text-md hover:text-[#4B771E] hover:bg-gray-50 text-sm transition-all duration-150"
           }
         >
           {item.name}
         </NavLink>
-
-        {/* Divider except after last item */}
         {i !== link.dropdown.length - 1 && (
-          <hr className="border-gray-200" />
+          <hr className="border-gray-200 mx-4" />
         )}
       </React.Fragment>
     ))}
   </div>
 )}
-
 
               </div>
             ) : (
@@ -106,23 +112,25 @@ const Header = () => {
         </nav>
 
         {/* Right Actions */}
-        {/* Right Actions */}
-<div className="hidden md:flex items-center space-x-6">
-  <div className="flex items-center space-x-2">
-    <FiPhoneCall className="text-[#4B771E] ml-3 text-lg" />
-    {/* Show text only on large screens */}
-    <span className="hidden lg:inline text-sm font-semibold text-black">
-      Emergency Call
-    </span>
-  </div>
-  <NavLink
-    to="/appointment"
-    className="bg-[#4B771E] hover:bg-[#3a5f17] text-white font-semibold text-sm px-6 py-2 rounded-full shadow-lg shadow-[0_0_20px_rgba(75,119,30,0.4)] transform hover:scale-105 transition-all duration-200"
-  >
-    Appointment
-  </NavLink>
-</div>
+        <div className="hidden md:flex items-center space-x-6">
+        <a href="tel:+919876543210" className="flex items-center space-x-2 hover:underline">
+  <FiPhoneCall className="text-[#4B771E] ml-3 text-lg" />
+  <span className="hidden lg:inline text-sm font-semibold text-black">
+    Emergency Call
+  </span>
+</a>
 
+          <div
+            onClick={() => setIsModalOpen(true)}
+            className="bg-[#4B771E] hover:bg-[#3a5f17] text-white font-semibold text-sm px-6 py-2 rounded-full shadow-lg shadow-[0_0_20px_rgba(75,119,30,0.4)] transform hover:scale-105 transition-all duration-200"
+          >
+            Appointment
+          </div>
+          <ConsultationFormModal
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                  />
+        </div>
 
         {/* Mobile Hamburger */}
         <button
@@ -149,7 +157,11 @@ const Header = () => {
                     className="flex justify-between items-center w-full text-left text-gray-700 font-medium"
                   >
                     {link.name}
-                    <span>{mobileDropdown === link.name ? "-" : "+"}</span>
+                    <FiChevronDown
+                      className={`transform transition-transform duration-300 ${
+                        mobileDropdown === link.name ? "rotate-180" : ""
+                      }`}
+                    />
                   </button>
                   {mobileDropdown === link.name && (
                     <div className="pl-4 mt-2 space-y-2">

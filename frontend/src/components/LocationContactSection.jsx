@@ -1,4 +1,4 @@
-import { FaWhatsapp, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { FaWhatsapp, FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 
 export default function LocationContactSection() {
   return (
@@ -15,28 +15,45 @@ export default function LocationContactSection() {
           </h2>
           <p className="text-gray-600 mt-4 flex items-start gap-2 text-sm sm:text-base">
             <FaMapMarkerAlt className="text-[#4B771E] mt-1 flex-shrink-0" />
-            Nirman Nagar, Jaipur – Centrally located, easy access & private parking.
+            1st floor, 28 Shiv Shakti Nagar, near Indo Bharat School, Nirman Nagar, Jaipur, Rajasthan 302019
           </p>
           <p className="text-gray-600 mt-2 flex items-start gap-2 text-sm sm:text-base">
-            🕒 Timings: Mon–Sat, 9 am–1 pm & 5 pm–8 pm.
+            🕒 Timings: Mon–Sat, 9 am–1 pm & 5 pm–8 pm
           </p>
 
           {/* Quick Links */}
-          <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row sm:flex-wrap sm:justify-center gap-3 sm:gap-4">
+          <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row sm:flex-wrap sm:justify-start gap-3 sm:gap-4">
+            {/* WhatsApp link */}
             <a
-              href="#"
+              href="https://wa.me/919876543210"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-[#4B771E] text-white px-4 py-2 rounded-full hover:bg-green-700 hover:scale-105 transition text-sm sm:text-base"
             >
               <FaWhatsapp /> WhatsApp Us Now
             </a>
+
+            {/* Call link */}
             <a
               href="tel:+919876543210"
               className="flex items-center justify-center gap-2 bg-gray-200 text-black px-4 py-2 rounded-full hover:bg-[#4B771E] hover:text-white hover:scale-105 transition text-sm sm:text-base"
             >
               <FaPhoneAlt /> Call for Appointment
             </a>
+
+            {/* Email link */}
             <a
-              href="#"
+              href="mailto:contact@vsmedihub.com"
+              className="flex items-center justify-center gap-2 bg-gray-200 text-gray-800 px-4 py-2 rounded-full hover:bg-gray-300 hover:scale-105 transition text-sm sm:text-base"
+            >
+              <FaEnvelope /> Email Us
+            </a>
+
+            {/* Directions link */}
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=28+Shiv+Shakti+Nagar+Nirman+Nagar+Jaipur"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-gray-200 text-gray-800 px-4 py-2 rounded-full hover:bg-gray-300 hover:scale-105 transition text-sm sm:text-base"
             >
               <FaMapMarkerAlt /> Get Directions

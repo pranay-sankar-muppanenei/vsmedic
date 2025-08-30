@@ -58,13 +58,7 @@ const experts = [
       "Specialist in advanced surgical procedures, including laparoscopic surgeries. Focused on patient safety, quick recovery, and comprehensive surgical care.",
     image: "/amit.png",
   },
-  {
-  name: "Dr Esha Swarnkar",
-  specialty: "Ayurvedic Doctor | Nadi Vaidya Specialist",
-  description:
-    "Dynamic Ayurvedic doctor at VS Medihub, Jaipur, specializing in Nadi Vaidya since 2019. Combines traditional Ayurvedic treatments with holistic health practices. Holds a BAMS degree from Sri Sri College of Ayurvedic Science and Research Centre, Bangalore.",
-  image: "/esha.png", // replace with actual image path
-}
+
 ];
 
 
@@ -131,7 +125,7 @@ export default function ExpertsSection() {
 
                 {/* CTA */}
                 <button className="mt-4 px-4 py-2 bg-[#4B771E] text-white rounded-full hover:bg-[#3b5f18] transition self-center">
-                  Book with {expert.name.split(" ")[1]}
+                  Book Appointment
                 </button>
               </div>
             </div>

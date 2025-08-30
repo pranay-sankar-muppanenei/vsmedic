@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { FiPhoneCall } from "react-icons/fi";
 
-const images = ["/vibhar.png", "/vaibhavr.png", "/eshar.png", "/nitinr.png","shurbhir.png","amitr.png","manishr.png","kushr.png","sars.png"];
+const images = ["/vibhar.png", "/vaibhavr.png", "/nitinr.png","shurbhir.png","amitr.png","manishr.png","kushr.png","sars.png"];
 
 const HeroSection = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -19,8 +20,8 @@ const HeroSection = () => {
         
         {/* Left Content */}
         <div className="flex-1 text-center lg:text-left">
-          <p className="text-sm sm:text-md font-semibold text-[#4B771E] tracking-widest uppercase">
-            Welcome to VsMedi
+          <p className="text-sm sm:text-md font-semibold text-[#4B771E] tracking-widest">
+            WELCOME To VS MediHUB
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mt-3">
             Where Elite Healthcare Meets Personal Wellness
@@ -32,9 +33,11 @@ const HeroSection = () => {
             <button className="bg-[#4B771E] text-white font-semibold px-6 py-3 rounded-full shadow-[0_0_15px_rgba(75,119,30,0.6)] hover:scale-105 transition-transform">
               Get Started
             </button>
+            <Link to='/contact' onClick={() => window.scrollTo(0, 0)} >
             <button className="bg-white text-gray-800 font-semibold px-6 py-3 rounded-full border border-gray-300 hover:bg-gray-100 transition">
               Contact Us
             </button>
+            </Link>
           </div>
         </div>
 
@@ -55,12 +58,12 @@ const HeroSection = () => {
 
           {/* Stats */}
           <div className="absolute top-4 sm:top-8 right-2 sm:right-0 bg-white rounded-lg shadow-md w-28 sm:w-36 lg:w-40 h-24 sm:h-28 lg:h-32 flex flex-col justify-center items-center">
-            <h2 className="text-xl sm:text-2xl font-bold">25+</h2>
+            <h2 className="text-xl sm:text-2xl font-bold">5+</h2>
             <p className="text-xs sm:text-sm text-gray-500 text-center">Years of Experience</p>
           </div>
 
           <div className="absolute top-36 sm:top-44 right-2 sm:right-0 bg-white rounded-lg shadow-md w-28 sm:w-36 lg:w-40 h-24 sm:h-28 lg:h-32 flex flex-col justify-center items-center">
-            <h2 className="text-xl sm:text-2xl font-bold">140+</h2>
+            <h2 className="text-xl sm:text-2xl font-bold">10+</h2>
             <p className="text-xs sm:text-sm text-gray-500 text-center">Specialist Doctors</p>
           </div>
         </div>

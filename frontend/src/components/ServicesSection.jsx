@@ -1,10 +1,10 @@
-import { FiArrowRight, FiActivity, FiUser, FiSearch } from "react-icons/fi";
+import { FiArrowRight } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 
 const services = [
   {
     id: "opd",
-    icon: <FiActivity className="text-[#4B771E] text-4xl" />,
+    icon: "/opd.png", // ✅ replace with your actual image path
     title: "Multispeciality OPDs",
     description:
       "Jaipur’s leading specialists in Cardiology, Orthopaedics, Neurology, Gynaecology, and more — all under one roof, with minimal waiting.",
@@ -12,16 +12,16 @@ const services = [
   },
   {
     id: "srajan",
-    icon: <FiUser className="text-[#4B771E] text-4xl" />,
-    title: "SRAJAN Women Wellness",
+    icon: "/women.png",
+    title: "Srajan Sanjeevani Women Wellness",
     description:
       "Garbh Sanskar, prenatal yoga, postnatal recovery, lactation planning, and authentic Ayurveda therapies.",
     cta: "View Motherhood Programs",
   },
   {
     id: "slimming",
-    icon: <FiSearch className="text-[#4B771E] text-4xl" />,
-    title: "Singla Slimming Centre",
+    icon: "/men.png",
+    title: "Singla Slimming Clinic",
     description:
       "Doctor-led slimming & body transformation programs that deliver visible, safe, and lasting results.",
     cta: "Start Your Slimming Journey",
@@ -41,7 +41,7 @@ export default function ServicesSection() {
           Amazing Medical Facilities Just for You
         </h2>
 
-        <div className="mt-12  grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
           {services.map((service) => (
             <div
               key={service.id}
@@ -50,9 +50,15 @@ export default function ServicesSection() {
                          transition-transform duration-300 hover:scale-[1.05] hover:shadow-lg hover:border-[#4B771E] 
                          flex flex-col items-center text-center"
             >
+              {/* ✅ Replaced icon with image */}
               <div className="bg-[#eaf3e3] w-20 h-20 flex items-center justify-center rounded-full mb-6">
-                {service.icon}
+                <img
+                  src={service.icon}
+                  alt={service.title}
+                  className="w-20 h-20 object-contain"
+                />
               </div>
+
               <h3 className="text-lg font-semibold text-gray-900">
                 {service.title}
               </h3>

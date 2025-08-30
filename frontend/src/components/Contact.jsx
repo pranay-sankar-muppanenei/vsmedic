@@ -16,7 +16,7 @@ const Contact = () => {
     <div className="bg-white py-10">
       {/* Heading */}
       <h1 className="text-center text-2xl sm:text-3xl font-bold text-[#4B771E] mb-6 tracking-wide">
-        Our Contact
+        Contact Us
       </h1>
 
       {/* Image */}
@@ -44,43 +44,59 @@ const Contact = () => {
           </p>
 
           {/* Contact Info */}
-          <div className="flex flex-wrap gap-5">
-            {/* Email */}
-            <div className="flex items-start mb-4 w-full sm:w-auto">
-              <span className="text-[#4B771E] border border-gray-300 p-3 rounded-full mr-4 text-lg shadow-lg flex-shrink-0">
-                <FaEnvelope />
-              </span>
-              <div>
-                <h4 className="font-semibold">Email</h4>
-                <p className="text-sm sm:text-base">info@vsenterprise.in</p>
-              </div>
-            </div>
+        {/* Contact Info */}
+<div className="flex flex-wrap gap-5">
+  {/* Email */}
+  <div className="flex items-start mb-4 w-full sm:w-auto">
+    <span className="text-[#4B771E] border border-gray-300 p-3 rounded-full mr-4 text-lg shadow-lg flex-shrink-0">
+      <FaEnvelope />
+    </span>
+    <div>
+      <h4 className="font-semibold">Email</h4>
+      <p className="text-sm sm:text-base">
+        <a href="mailto:info@vsenterprise.in" className="hover:underline">
+          info@vsenterprise.in
+        </a>
+      </p>
+    </div>
+  </div>
 
-            {/* Phone */}
-            <div className="flex items-start mb-4 w-full sm:w-auto">
-              <span className="text-[#4B771E] border border-gray-300 p-3 rounded-full mr-4 text-lg shadow-lg flex-shrink-0">
-                <FaPhoneAlt />
-              </span>
-              <div>
-                <h4 className="font-semibold">Our Number</h4>
-                <p className="text-sm sm:text-base">+91 72404 45656</p>
-              </div>
-            </div>
+  {/* Phone */}
+  <div className="flex items-start mb-4 w-full sm:w-auto">
+    <span className="text-[#4B771E] border border-gray-300 p-3 rounded-full mr-4 text-lg shadow-lg flex-shrink-0">
+      <FaPhoneAlt />
+    </span>
+    <div>
+      <h4 className="font-semibold">Our Number</h4>
+      <p className="text-sm sm:text-base">
+        <a href="tel:+917240445656" className="hover:underline">
+          +91 72404 45656
+        </a>
+      </p>
+    </div>
+  </div>
 
-            {/* Address */}
-            <div className="flex items-start mb-4 w-full sm:w-auto">
-              <span className="text-[#4B771E] border border-gray-300 p-3 rounded-full mr-4 text-lg shadow-lg flex-shrink-0">
-                <FaMapMarkerAlt />
-              </span>
-              <div>
-                <h4 className="font-semibold">Address</h4>
-                <p className="text-sm sm:text-base">
-                  28, First Floor, Shiv Shakti Nagar, Nirman Nagar, Jaipur 302019
+  {/* Address */}
+  <div className="flex items-start mb-4 w-full sm:w-auto">
+    <span className="text-[#4B771E] border border-gray-300 p-3 rounded-full mr-4 text-lg shadow-lg flex-shrink-0">
+      <FaMapMarkerAlt />
+    </span>
+    <div>
+      <h4 className="font-semibold">Address</h4>
+      <p className="text-sm sm:text-base">
+        <a
+          href="https://www.google.com/maps/place/VS+MediHUB/@26.8841343,75.7479349,17z"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
+          28, First Floor, Shiv Shakti Nagar, Nirman Nagar, Jaipur 302019
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
 
-                </p>
-              </div>
-            </div>
-          </div>
 
           <hr className="border-gray-200 my-4" />
 
@@ -179,7 +195,7 @@ const Contact = () => {
 
 
         <FAQSection />
-        <Reuse />
+
       </div>
     </div>
   );

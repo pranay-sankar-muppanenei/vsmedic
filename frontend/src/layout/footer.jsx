@@ -27,18 +27,26 @@ export default function Footer() {
         </div>
 
         {/* Address & Contact */}
-        <div>
-          <h3 className="font-semibold text-lg">Address</h3>
-          <p className="text-green-100 text-sm mt-2">
-           1st floor, 28 Shiv Shakti Nagar, near Indo Bharat School, Nirman Nagar, Jaipur, Rajasthan 302019
- 
-Directions
+    {/* Address & Contact */}
+<div>
+  <h3 className="font-semibold text-lg">Address</h3>
+  <p className="text-green-100 text-sm mt-2">
+    1st floor, 28 Shiv Shakti Nagar, near Indo Bharat School, Nirman Nagar, Jaipur, Rajasthan 302019
+  </p>
 
-          </p>
-          <h3 className="font-semibold text-lg mt-4">Contact</h3>
-          <p className="text-green-100 text-sm mt-2">+91 98765 43210</p>
-          <p className="text-green-100 text-sm">contact@vsmedihub.com</p>
-        </div>
+  <h3 className="font-semibold text-lg mt-4">Contact</h3>
+  <p className="text-green-100 text-sm mt-2">
+    <a href="tel:+919876543210" className="hover:underline">
+      +91 98765 43210
+    </a>
+  </p>
+  <p className="text-green-100 text-sm">
+    <a href="mailto:contact@vsmedihub.com" className="hover:underline">
+      contact@vsmedihub.com
+    </a>
+  </p>
+</div>
+
 
         {/* Explore */}
         <div>
@@ -86,7 +94,7 @@ Directions
       {/* Footer Bottom */}
       <div className="border-t border-green-300 mt-8 py-4 flex justify-between  text-sm text-green-100 space-y-2 px-4">
         <p>© 2025 VS MediHUB – All rights reserved.</p>
-        <p>Medical license & certifications displayed.</p>
+        <p>Designed & Developed By <span className="font-bold text-md">Yashik Yadav & Co.</span></p>
         <p>
           Follow us on{" "}
           <a href="#" className="underline">Instagram</a> |{" "}

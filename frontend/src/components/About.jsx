@@ -7,8 +7,8 @@ import ExpertsSection from "./expertsSection";
 import Reuse from "./reuse";
 
 const statsData = [
-  { number: 25, suffix: "+", label: "Years of Experience",label2:"Decades of expertise in delivering quality healthcare." },
-  { number: 140, suffix: "+", label: "Specialist Doctors",label2:"A wide network of leading healthcare experts across all specialties." },
+  { number: 5, suffix: "+", label: "Years of Experience",label2:"Decades of expertise in delivering quality healthcare." },
+  { number: 10, suffix: "+", label: "Specialist Doctors",label2:"A wide network of leading healthcare experts across all specialties." },
   { number: 500, suffix: "+", label: "Professional Nurses", highlight: true,label2:"Compassionate and skilled nursing staff dedicated to your comfort and recovery." },
   { number: 99, suffix: "%", label: "Positive Reviews" ,label2:"Trusted and recommended by thousands of satisfied patients and their families."},
 ];
